@@ -1,0 +1,35 @@
+html {
+  header {
+  }
+
+  main {
+    padding-top: $navbar-height + 36px;
+    .left-content {
+      padding-top: 30px;
+      .screenshot {
+        img {
+          max-height: 500px;
+          width: auto;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .right-content {
+      padding-top: 30px;
+      .title {
+        color: $text-primary;
+      }
+      .btn {
+        min-width: 220px;
+        display: block;
+        .fa-apple {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+
+  footer {
+  }
+}
