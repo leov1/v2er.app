@@ -10643,11 +10643,12 @@ html main .left-content {
   padding-top: 30px;
 }
 
-html main .left-content .screenshot img {
-  max-height: 500px;
+html main .left-content .screenshot .phone {
+  max-height: 460px;
   width: auto;
   -o-object-fit: contain;
   object-fit: contain;
+  vertical-align: bottom;
 }
 
 html main .right-content {
@@ -10665,4 +10666,30 @@ html main .right-content .btn {
 
 html main .right-content .btn .fa-apple {
   font-size: 21px;
+}
+
+@media (max-width: 991.98px) {
+  html main .left-content .screenshot .iPhone {
+    position: absolute;
+    right: 1rem;
+    z-index: -1;
+  }
+  html main .right-content .title {
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+  html main .right-content .btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  html main .right-content .btn-wrapper .btn {
+    min-width: 80%;
+  }
 }

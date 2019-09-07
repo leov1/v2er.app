@@ -7,10 +7,12 @@ html {
     .left-content {
       padding-top: 30px;
       .screenshot {
-        img {
-          max-height: 500px;
+        // text-align: center;
+        .phone {
+          max-height: 460px;
           width: auto;
           object-fit: contain;
+          vertical-align: bottom;
         }
       }
     }
@@ -28,6 +30,35 @@ html {
         }
       }
     }
+
+    @include media-breakpoint-down(md) {
+      .left-content {
+        .screenshot {
+          .iPhone {
+            position: absolute;
+            right: $page-padding-x;
+            z-index: -1;
+          }
+        }
+      }
+
+      .right-content {
+        .title {
+          margin: auto;
+          font-size: 2rem;
+          text-align: center;
+        }
+        .btn-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          .btn {
+            min-width: 80%;
+          }
+        }
+      }
+    }
+
   }
 
   footer {
