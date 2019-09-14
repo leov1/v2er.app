@@ -11017,6 +11017,22 @@ hr.light {
   padding: 8rem 0;
 }
 
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: black;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: .25rem;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  margin-left: -3px;
+  content: "";
+  border-width: 5px 5px 0;
+  border-top-color: whitesmoke;
+}
+
 body {
   background: black;
 }
@@ -11039,12 +11055,18 @@ body {
   padding: 5px 10px;
 }
 
+html header .navbar-toggler:focus,
+html header .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
 html main {
-  padding-top: 108px;
+  padding-top: 64px;
 }
 
 html main .left-content {
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 html main .left-content .screenshot .phone {
@@ -11056,31 +11078,42 @@ html main .left-content .screenshot .phone {
 }
 
 html main .right-content {
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 html main .right-content .title {
   color: rgba(255, 255, 255, 0.75);
 }
 
-html main .right-content button {
-  min-width: 220px;
+html main .right-content .btn-download {
+  max-width: 220px;
   display: block;
 }
 
-html main .right-content button .fa-apple {
+html main .right-content .btn-download .fa-apple {
   font-size: 21px;
 }
 
-html main .right-content button:last-child {
+html main .right-content .btn-download:last-child {
   background-color: #a0a0a0;
 }
 
-html main .right-content button:last-child:hover {
+html main .right-content .btn-download:last-child:hover {
   color: black;
 }
 
+html main .right-content .coolapk {
+  display: block;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  font-style: italic;
+  padding: 14px 4px;
+}
+
 @media (max-width: 991.98px) {
+  html main .left-content {
+    padding-top: 20px;
+  }
   html main .left-content .screenshot .android {
     position: relative;
     z-index: 10;
@@ -11089,6 +11122,9 @@ html main .right-content button:last-child:hover {
     position: absolute;
     right: 1rem;
     z-index: 9;
+  }
+  html main .right-content {
+    padding-top: 20px;
   }
   html main .right-content .title {
     margin: auto;

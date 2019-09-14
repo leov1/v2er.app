@@ -1,11 +1,18 @@
 html {
-  header {}
+  header {
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
 
   main {
-    padding-top: $navbar-height + 36px;
+    padding-top: $navbar-height;
 
     .left-content {
-      padding-top: 30px;
+      padding-top: $main-content-page-y * 4;
 
       .screenshot {
 
@@ -20,14 +27,14 @@ html {
     }
 
     .right-content {
-      padding-top: 30px;
+      padding-top: $main-content-page-y * 4;
 
       .title {
         color: $text-primary;
       }
 
-      button {
-        min-width: 220px;
+      .btn-download {
+        max-width: 220px;
         display: block;
 
         .fa-apple {
@@ -44,11 +51,20 @@ html {
 
       }
 
+      .coolapk {
+        display: block;
+        color: $text-mute;
+        font-size: 12px;
+        font-style: italic;
+        padding: 14px 4px;
+      }
 
     }
 
     @include media-breakpoint-down(md) {
       .left-content {
+        padding-top: $main-content-page-y;
+
         .screenshot {
           .android {
             position: relative;
@@ -64,6 +80,8 @@ html {
       }
 
       .right-content {
+        padding-top: $main-content-page-y;
+
         .title {
           margin: auto;
           font-size: 2rem;
@@ -87,6 +105,7 @@ html {
   footer {
     .text-muted {
       color: $text-mute !important;
+
       a {
         color: inherit;
       }

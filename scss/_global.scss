@@ -57,3 +57,19 @@ hr.light {
 .page-section {
   padding: 8rem 0;
 }
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color:black;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: .25rem;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+  margin-left: -3px;
+  content: "";
+  border-width: 5px 5px 0;
+  border-top-color: whitesmoke;
+}
