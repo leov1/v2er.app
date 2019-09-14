@@ -89,13 +89,19 @@ html {
         }
 
         .btn-wrapper {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
+          // display: flex;
+          // flex-wrap: wrap;
+          // justify-content: center;
 
           .btn {
             min-width: 80%;
             box-shadow: none;
+            margin: auto;
+          }
+          .coolapk {
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
           }
         }
       }

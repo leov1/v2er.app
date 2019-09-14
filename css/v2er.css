@@ -11131,22 +11131,15 @@ html main .right-content .coolapk {
     font-size: 2rem;
     text-align: center;
   }
-  html main .right-content .btn-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   html main .right-content .btn-wrapper .btn {
     min-width: 80%;
     box-shadow: none;
+    margin: auto;
+  }
+  html main .right-content .btn-wrapper .coolapk {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
   }
 }
 
