@@ -11146,6 +11146,7 @@ html main .right-content .coolapk {
   }
   html main .right-content .btn-wrapper .btn {
     min-width: 80%;
+    box-shadow: none;
   }
 }
 
