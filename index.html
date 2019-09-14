@@ -18,11 +18,10 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <header>
-        <!-- Navigation -->
+    <header id="top">
         <nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top py-2" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">
+                <a class="navbar-brand" href="#top">
                     <img class="logo" src="img/logo.png">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -57,10 +56,9 @@
         <div class="container">
             <div class="row">
                 <div class="left-content col-md-6">
-                    <div class="screenshot">
-                        
-                        <img class="iPhone phone" src="img/iPhone.png">
-                        <img class="android phone" src="img/Android-Dark.png">
+                    <div class="screenshot" id="screenshot">
+                        <img class="android phone" src="img/Android-Dark.png" id="android">
+                        <img class="iPhone phone" src="img/iPhone.png" id="iPhone">
                     </div>
                 </div>
                 <div class="right-content col-md-6">
@@ -69,22 +67,26 @@
                     </h1>
                     <div class="btn-wrapper mt-5">
                         <button class="btn btn-primary"><i class="fab fa-google-play"></i> Google Play Store</button>
-                        <button class="btn btn-primary mt-3"><i class="fab fa-apple"></i> Apple App Store</button>
+                        <button class="btn btn-primary mt-3 app-store" data-toggle="tooltip" data-placement="top"
+                            title="Coming Soon">
+                            <i class="fab fa-apple"></i>
+                            Apple App Store</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer mt-auto py-3">
+    <footer class="footer mt-auto pt-4 pb-2">
         <div class="container text-center">
-            <span class=" small text-muted">Copyright &copy; 2019 - LessMore Studio</span>
+            <span class=" small text-muted">Copyright © 2019 - <a href="https://twitter.com/lessmoreio" target="_blank">LessMore Studio</a></span>
         </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/v2er.min.js"></script>
 </body>
 
 </html>

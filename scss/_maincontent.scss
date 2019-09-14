@@ -1,12 +1,14 @@
 html {
-  header {
-  }
+  header {}
 
   main {
     padding-top: $navbar-height + 36px;
+
     .left-content {
       padding-top: 30px;
+
       .screenshot {
+
         // text-align: center;
         .phone {
           max-height: 460px;
@@ -19,25 +21,44 @@ html {
 
     .right-content {
       padding-top: 30px;
+
       .title {
         color: $text-primary;
       }
-      .btn {
+
+      button {
         min-width: 220px;
         display: block;
+
         .fa-apple {
           font-size: 21px;
         }
+
+        &:last-child {
+          background-color: $disabled;
+
+          &:hover {
+            color: black;
+          }
+        }
+
       }
+
+
     }
 
     @include media-breakpoint-down(md) {
       .left-content {
         .screenshot {
+          .android {
+            position: relative;
+            z-index: 10;
+          }
+
           .iPhone {
             position: absolute;
             right: $page-padding-x;
-            z-index: -1;
+            z-index: 9;
           }
         }
       }
@@ -48,10 +69,12 @@ html {
           font-size: 2rem;
           text-align: center;
         }
+
         .btn-wrapper {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+
           .btn {
             min-width: 80%;
           }
@@ -62,5 +85,12 @@ html {
   }
 
   footer {
+    .text-muted {
+      color: $text-mute !important;
+      a {
+        color: inherit;
+      }
+    }
   }
+
 }

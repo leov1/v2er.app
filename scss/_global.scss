@@ -38,6 +38,10 @@ hr.light {
   border-radius: 0;
   padding: .6rem 1rem;
   border: 0;
+  &:disabled {
+    background-color: $disabled;
+    color: black;
+  }
 }
 
 .btn-xl {

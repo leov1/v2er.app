@@ -4,9 +4,11 @@
 
 // Set a custom color
 $white: #ffffff !default;
-$accent: rgba(255, 255, 255, 0.8) !default;
+$primary: rgba(255, 255, 255, 0.9);
+$accent: rgba(255, 255, 255, 0.75) !default;
 $text-primary: $accent;
-
+$disabled: rgb(160, 160, 160);
+$text-mute: rgba(255, 255, 255, 0.65);
 // Font overrides
 $font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
 
