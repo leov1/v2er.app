@@ -84,8 +84,8 @@ function css() {
     }))
     .on("error", sass.logError)
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
+      // browserslist: ['defaults'],
+      // cascade: false
     }))
     .pipe(header(banner, {
       pkg: pkg
